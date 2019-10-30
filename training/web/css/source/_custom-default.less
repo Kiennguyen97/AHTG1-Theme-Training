@@ -1,0 +1,233 @@
+// .my-banner{
+//     background: url('@{baseDir}images/contact-banner.png');
+
+// }
+.page-main {
+    max-width: 1400px;
+}
+
+.page-title-wrapper {
+    position: relative;
+}
+
+.column.main {
+    height: 700px;
+}
+
+.page-main>.page-title-wrapper .page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: 'Gotham-Ultra';
+    font-size: 48px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: 342px;
+    left: 45%;
+    color: white;
+
+    .items {
+        font-size: 14px;
+        font-family: 'Poppins';
+    }
+
+    a {
+        color: white;
+        font-weight: 500;
+    }
+
+    .items>li {
+        color: white;
+        font-weight: 700;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.page-layout-1column .column.main {
+    padding: 0 138px;
+}
+
+.contact-index-index .column:not(.sidebar-additional) .form.contact {
+    float: left;
+    width: 50%;
+}
+
+.left-form {
+    width: 48%;
+    float: left;
+    margin-left: 17px;
+
+    .left-form-contact {
+
+        .left-form-contact-wrap {
+            font-family: 'Poppins';
+            background: #EDEDED;
+            text-align: left;
+            padding: 30px;
+
+            .title-contact {
+                color: #9B7C4E;
+
+                span {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+
+            .content-contact {
+                .content {
+
+                    &-mail,
+                    &-address {
+                        margin-top: 20px;
+                    }
+                }
+
+                i {
+                    display: inline-block;
+                    width: 30px;
+                }
+            }
+        }
+
+    }
+
+    .left-form-map {
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.columns {
+    margin-top: 70px;
+
+    .legend {
+        color: #9B7C4E;
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .field.note {
+        color: #707070;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    .control {
+        border: 2px solid #D6D6D6;
+        position: relative;
+        border-radius: 15px;
+        padding: 12px 76px 10px 20px;
+        transition: .8s;
+
+        &:focus-within {
+            border: 2px solid #9C7D4D;
+
+        }
+
+        .label {
+            position: absolute;
+            top: -17px;
+            background: white;
+            left: 10px;
+            color: #9B7C4E;
+            padding: 4px;
+            font-size: 12px;
+            font-family: 'Gotham-Book';
+
+            span {
+                display: none;
+                transition: .5s;
+            }
+        }
+
+        input,
+        textarea {
+            border: none;
+
+            &:focus+.label {
+                span {
+                    display: block;
+                }
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                font-family: 'Poppins';
+                color: #707070;
+                font-size: 14px;
+                font-weight: 400;
+                opacity: .8;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+
+    .actions-toolbar {
+        float: right;
+
+        .primary .action {
+            margin: 0;
+        }
+
+        .primary.action {
+            padding: 16px 60px;
+            border-radius: 35px;
+            background: #9B7C4E;
+            border: 1px solid #707070;
+
+            span {
+                font-family: 'Poppins';
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.bottom-form {
+    height: 293px;
+    position: relative;
+    background: #EDEDED;
+
+    img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .bottom-form-content {
+        max-width: 63%;
+        float: right;
+        margin-top: 45px;
+
+        .text-title {
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-weight: 500;
+            color: #707070;
+            line-height: 25px;
+        }
+    }
+}

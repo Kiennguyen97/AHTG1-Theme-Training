@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- <referenceContainer name="columns.top">
+            <container name="contact.banner"  htmlTag="div"  htmlClass="banner-contact" before="-"/>
+        </referenceContainer> -->
+        <referenceBlock name="breadcrumbs">
+            <action method="addCrumb">
+                <argument name="crumbName" xsi:type="string">Home</argument>
+                <argument name="crumbInfo" xsi:type="array">
+                    <item name="title" xsi:type="string">Home</item>
+                    <item name="label" xsi:type="string">Home</item>
+                    <item name="link" xsi:type="string">{{baseUrl}}</item>
+                </argument>
+            </action>
+            <action method="addCrumb">
+                <argument name="crumbName" xsi:type="string">Contact Us</argument>
+                <argument name="crumbInfo" xsi:type="array">
+                    <item name="title" xsi:type="string">Contact Us</item>
+                    <item name="label" xsi:type="string">Contact Us</item>
+                </argument>
+            </action>
+        </referenceBlock>
+        <!-- <move element="breadcrumbs" destination="page.main.title" after="-"/> -->
+        <!-- <move element="" destination="contact.banner" before="breadcrumbs"/> -->
+        <referenceBlock name="page.main.title">
+            <block class="Magento\Framework\View\Element\Template" name="my.banner" template="Magento_Contact::banner.phtml" after="breadcrumbs"/>            
+        </referenceBlock>
+        <referenceContainer name="main">
+            <block class="Magento\Framework\View\Element\Template" name="left-form" template="Magento_Contact::left-form.phtml" after="contactForm"/>
+        </referenceContainer>
+        <referenceContainer name="columns">
+            <block class="Magento\Framework\View\Element\Template" name="bottom-form" template="Magento_Contact::bottom-form.phtml" />
+        </referenceContainer>
+    </body>
+</page>
