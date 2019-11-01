@@ -9,5 +9,6 @@
     <update handle="default_head_blocks"/>
     <body>
         <move element="breadcrumbs" destination="page.main.title" after="-"/>
+        <!-- <move element="page.main.title" destination="page.wrapper" before="main" /> -->
     </body>
 </page>
